@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+</head>
+<body>
+    <h1>Магазин</h1>
+    <ul>
+        {% for item, price in games.items %}
+        <li>
+            {{ item }} - {{ price }} руб.
+            <button>Купить</button>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/task3/"><button>На главную</button></a>
+</body>
+</html>
