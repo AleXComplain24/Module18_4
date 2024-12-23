@@ -23,6 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('task2/', include('task2.urls')),  # Подключаем маршруты приложения task2
     path('task4/', include('task4.urls')),  # Подключение маршрутов из task4
-    path('', sign_up_by_html, name='html_signup'),
-    path('django_sign_up', sign_up_by_django, name='django_signup'),
+    path('', sign_up_by_html, name='html_sign_up'),
+    path('django_sign_up/', sign_up_by_django, name='django_sign_up'),
 ]
